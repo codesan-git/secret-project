@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1690508358031,
-      "tag": "0000_glamorous_nightshade",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1690509266285,
-      "tag": "0001_spotty_scream",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1690511753925,
-      "tag": "0002_windy_pyro",
+      "when": 1690515994621,
+      "tag": "0000_clumsy_gunslinger",
       "breakpoints": true
     }
   ]
