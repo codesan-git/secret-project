@@ -6,20 +6,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migration:generate": "drizzle-kit generate:pg --schema=./src/db/schema.ts",
+    "migration:push": "node -r esbuild-register src/db/migrate.ts",
+    "migrate": "drizzle-kit generate:pg --schema=./src/db/schema.ts && node -r esbuild-register src/db/migrate.ts"
   },
   "dependencies": {
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.27.2",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
+    "pg": "^8.11.1",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.2",
+    "drizzle-kit": "^0.19.12",
+    "esbuild": "^0.18.17",
+    "esbuild-register": "^3.4.2"
   }
 }
