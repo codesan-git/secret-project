@@ -4,6 +4,7 @@ import { useState } from "react";
 import CreatePost from "@/components/CreatePost";
 // import Posts from "@/components/Posts";
 import UserList from "@/components/UserList";
+import User from "../User";
 
 export function App() {
   const queryClient = new QueryClient();
@@ -11,9 +12,10 @@ export function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="p-5 grid grid-cols-2">
-        <UserList selectedUserId={selectedUserId} setSelectedUserId={setSelectedUserId} />
+        <User />
+        {/* <UserList selectedUserId={selectedUserId} setSelectedUserId={setSelectedUserId} /> */}
         {/* <Posts selectetdUserId={selectedUserId} /> */}
-        <CreatePost userId={selectedUserId} />
+        {/* <CreatePost userId={selectedUserId} /> */}
       </div>
     </QueryClientProvider>
   );
