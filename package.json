@@ -13,6 +13,7 @@
     "db:seed": "node -r esbuild-register src/db/seed.ts"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.32.0",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
@@ -30,6 +31,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^4.29.25",
     "@types/pg": "^8.10.2",
     "drizzle-kit": "^0.19.12",
     "esbuild": "^0.18.17",
