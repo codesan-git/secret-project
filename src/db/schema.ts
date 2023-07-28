@@ -23,6 +23,7 @@ import {
   timestamp,
   varchar,
 } from "drizzle-orm/pg-core";
+// test
 
 export const users = pgTable("users", {
     id: serial("id").primaryKey(),
